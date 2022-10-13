@@ -1,0 +1,110 @@
+body{
+  margin: auto;
+  border-top: 20px #EA970D solid;
+}
+.contenedorlogo{
+  text-align: center;
+  background-color: #041237;
+}
+.dejanosconocerte{
+  font-family: tahoma;
+  color: #046F94;
+  text-align: center;
+  background-color: #e8eff9;
+  font-size:14px;
+  padding: 1px;
+}
+.dejanosconocerte hr{
+  width: 57px;
+  height: 5px;
+  background-color: #C3110F;
+  border: none;
+}
+.formulario{
+  border: 1px white solid;
+  background-color: white;
+}
+.datosformulario{
+  border-radius: 15px ;
+  border: 3px #3786A5 solid;
+  margin: 25px 15px;
+}
+.encabezado{
+  text-align: center;
+  font-family: tahoma;
+}
+.encabezado h2{
+  font-size: 26px;
+  color: #E7960D;
+}
+.encabezado h3{
+  font-size: 20px;
+}
+.contenidoderecho{
+  display: inline-block;
+  line-height: 50px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.contenidoizquierdo{
+  display: inline-block;
+  margin-left: 15px;
+  line-height: 50px;
+}
+.contenidoizquierdo h2{
+  font-size: 24px;
+  font-family: tahoma;
+  color: #468FAD;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.contenidoizquierdo span{
+  font-size: 20px;
+  font-family: tahoma;
+  color: #468FAD;
+  font-weight: lighter;
+}
+.logopdf{
+  width: 20px;
+  vertical-align: middle;
+}
+.borde{
+  border: 1px #E1E1E1 solid;
+  height: 22px;
+  width: 700px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-radius: 5px;
+}
+.borde2{
+  border: 1px #E1E1E1 solid;
+  height: 22px;
+  width: 700px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-radius: 5px;
+}
+.borde3{
+  border: 1px #E1E1E1 solid;
+  height: 28px;
+  width: 700px;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-radius: 5px;
+}
+.btnenviar{
+  display: inline-block;
+  background-color:#C3110F;
+  border-radius: 30px;
+  border: none;
+  width: 700px;
+  height: 40px;
+  color: white;
+}
+.datosalumno{
+  text-align: center;
+  background-color: #041237;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+}

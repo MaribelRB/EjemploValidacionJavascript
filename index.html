@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>LaSagradaFamilia</title>
+</head>
+<body>
+<div class="contenedorlogo">
+  <br>
+  <img src="/imagenes/logo_cabecera.png" alt="">
+  <br><br>
+</div>
+<div class="dejanosconocerte">
+  <h1>DÉJANOS CONOCERTE</h1>
+  <hr>
+</div>
+<div class="formulario">
+  <div class="datosformulario">
+    <form action="enviar.php" name="formu" method="post" enctype="multipart/form-data">
+      <div class="encabezado">
+        <h2>¡ Compartenos tu inofrmación !</h2>
+        <h3> Dejanos tus datos personales y nosotros nos comunicaremos contigo lo más pronto posible </h3>
+      </div>
+
+      <div class="contenidoderecho">
+        <input type="text" placeholder="Nombre Completo *"class="borde" id="nombre"><br>
+        <input type="email"placeholder="Correo Electrónico *"class="borde" id="correo" ><br>
+        <input type="tel" placeholder="Celular *"class="borde" id="telefono" ><br>
+        <input type="text" placeholder="Ciudad"class="borde"><br>
+        <input type="text" placeholder="Localidad"class="borde"><br>
+      </div>
+      <div class="contenidoizquierdo">
+        <input type="text" placeholder="Estado" class="borde2"><br>
+        <input type="text" placeholder="Colonia" class="borde2"><br>
+        <select class="borde3" name="Areadeinteres" id="">
+          <option value="">Elige tu área de interes</option>
+          <option value="">Cajas</option>
+          <option value="">Servicios</option>
+          <option value="">Asesoramiento Financioero</option>
+          <option value="">Gestoría y Cobranza</option>
+          <option value="">Crédito</option>
+          <option value="">Jurídico</option>
+          <option value="">Archivo</option>
+          <option value="">Mercadotecnia</option>
+          <option value="">Diligencias</option>
+          <option value="">Compras</option>
+          <option value="">Intendencia</option>
+          <option value="">Auditoria</option>
+          <option value="">Capital Humano</option>
+          <option value="">Mantenimiento</option>
+          <option value="">Sistemas</option>
+          <option value="">Contabilidad</option>
+          <option value="">Administración</option>
+        </select>
+        <h2>Sube tu curriculum en Formato PDF <span>(no exceder de 5MB) </span><img class="logopdf" src="/imagenes/icono_pdf.png" alt=""> </h2>
+        <input type="file"class="borde3"><br><br>
+        <input class="btnenviar" id="boton" type="button" value="Enviar" onClick="valida_formuario()"><br><br>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="datosalumno">
+  <br>
+  <h2>Maribel Romero Bautista</h2>
+  <h2>7sb</h2>
+  <h2>Programación Web</h2>
+  <br>
+</div>
+
+<script>
+  function valida_formuario() {
+    if(document.getElementById("nombre").value.length == 0){
+      alert("Escribe tu nombre completo")
+      document.getElementById("nombre").focus()
+      return 0;
+    }
+
+    if(document.getElementById("correo").value.length == 0){
+      alert("Escribe tu correo completo")
+      document.getElementById("correo").focus()
+      return 0;
+    }
+    if(document.getElementById("telefono").value.length == 0){
+      alert("Escribe tu numero de telefono")
+      document.getElementById("telefono").focus()
+      return 0;
+    }
+    document.formu.submit();
+  }
+</script>
+
+</body>
+</html>
